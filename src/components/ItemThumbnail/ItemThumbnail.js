@@ -15,8 +15,8 @@ const ItemThumbnailStyled = styled.div`
 
     @media (max-width: 930px) {
         width: 250px;
-      } 
-   
+      }
+
       @media (max-width: 710px) {
         width: 100%;
       }
@@ -30,7 +30,7 @@ const Heading = styled.h3`
     width: 100%;
     min-height: 85px;
     margin: auto;
-    
+
 `
 
 const LinkStyled = styled(Link)`
@@ -64,7 +64,7 @@ const itemThumbnail = (props) => {
                 <ImgStyled fluid={props.image} />
                 <Heading>{props.heading}</Heading>
             </LinkStyled>
-            <Price>£{props.price.toFixed(2)}</Price>
+            <Price>${props.price.toFixed(2)}</Price>
         </ItemThumbnailStyled >
     )
 }
